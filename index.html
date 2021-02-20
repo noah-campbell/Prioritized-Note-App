@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+	<script src="write.js"></script>
+</head>
+<body>
+	First name:<input type="text" id="firstName">
+	Last name:<input type="text" id="lastName"> <br>
+	Profile picture:<input type="file" id="img" accept="image/*"> <br>
+	What is your field of study?<select id="major">
+							<option value="Accountancy">Accountancy</option>
+  							<option value="Architecture">Architecture</option>
+  							<option value="Biochemistry">Biochemistry</option>
+  							<option value="Biomedical Science">Biomedical Science</option>
+  							<option value="Business Administration">Business Administration</option>
+  							<option value="Clinical Science">Clinical Science</option>
+  							<option value="Commerce">Commerce</option>
+  							<option value="Computer Applications">Computer Applications</option>
+  							<option value="Community Health">Community Health</option>
+  							<option value="Computer Information Systems">Computer Information Systems</option>
+  							<option value="Construction Technology">Construction Technology</option>
+  							<option value="Criminal Justice">Criminal Justice</option>
+  							<option value="Economics">Economics</option>
+  							<option value="Education">Education</option>
+  							<option value="Engineering">Engineering</option>
+  							<option value="Fine Arts">Fine Arts</option>
+  							<option value="Management">Management</option>
+  							<option value="Music">Music</option>
+  							<option value="Pharmacy">Pharmacy</option>
+  							<option value="Philosophy">Philosophy</option>
+  							<option value="Public Affairs and Policy Management">Public Affairs and Policy Management</option>
+  							<option value="Social Work">Social Work</option>
+						</select> <br>
+	Tell us about yourself: <br><textarea id="bio" class="bio"></textarea> <br>
+	<input type="reset" id="button" value="Submit" OnClick="pushStudent()"> <br>
+	<div id="output"></div>
+</body>
+</html>
