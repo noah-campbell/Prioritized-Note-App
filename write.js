@@ -1,41 +1,45 @@
-var students = [];
+var notes = [];
 
-function Student(firstName, lastName, img, major, bio){
-  this.firstName = firstName;
-  this.lastName = lastName;
-  this.img = img;
-  this.major = major;
-  this.bio = bio;
-  this.newStudent = function () {
-    return "<div class='studentForm'>" + "<div class='fullName'>" 
-    + this.firstName + " " + this.lastName + " " + "<div class='far fa-user' style='font-size: 1.6em'></div>" + "</div>" 
-    + this.img + "<br>" + "<div class='fieldOfStudy'>Field of study: " 
-    + this.major + "</div>" + "<br>" + "<div class='bio'>" 
-    + this.bio + "</div>" + "</div>";
+function Note(title, date, priority, noteDetails){
+  this.title = title;
+  this.date = date;
+  this.priority = priority;
+  this.noteDetails = noteDetails;
+  this.newNote = function () {
+    return "<div id='notes' style='background-color:"+ this.priority + ";'>" 
+    + "<div class='title'>" + this.title + "</div>" 
+    + "<div class='date'>" + this.date + "</div>" 
+    + "<br>" 
+    + "<div class='details'>" + this.noteDetails + "</div>" 
+    + "</div>";
+    console.log(document.getElementById("priority").value);
   }
 }
 
-function newStudent() {
+function newNote() {
    output = "";
-   for(var i = 0; i < students.length; i++) {
-      output += students[i].newStudent();
+   for(var i = 0; i < notes.length; i++) {
+      output += notes[i].newNote();
    }
    document.getElementById("output").innerHTML = output;
 }
 
-function pushStudent() {
-  var student =  new Student(
-    document.getElementById("firstName").value, 
-    document.getElementById("lastName").value, 
-    document.getElementById("img").value,
-    document.getElementById("major").value,
-    document.getElementById("bio").value
+function pushNote() {
+  var note =  new Note(
+    document.getElementById("title").value, 
+    document.getElementById("date").value,
+    document.getElementById("priority").value,
+    document.getElementById("noteDetails").value
+    
   );
-  students.push(student);
-  newStudent();
 
-  console.log(student);
-  console.log(students);
+
+  notes.push(note);
+  newNote();
+
+  console.log(note);
+  console.log(notes);
 }
+
 
 

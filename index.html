@@ -8,38 +8,25 @@
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-	<script src="write.js"></script>
+  <script src="write.js"></script>
 </head>
 <body>
-	First name:<input type="text" id="firstName">
-	Last name:<input type="text" id="lastName"> <br>
-	Profile picture:<input type="file" id="img" accept="image/*"> <br>
-	What is your field of study?<select id="major">
-							<option value="Accountancy">Accountancy</option>
-  							<option value="Architecture">Architecture</option>
-  							<option value="Biochemistry">Biochemistry</option>
-  							<option value="Biomedical Science">Biomedical Science</option>
-  							<option value="Business Administration">Business Administration</option>
-  							<option value="Clinical Science">Clinical Science</option>
-  							<option value="Commerce">Commerce</option>
-  							<option value="Computer Applications">Computer Applications</option>
-  							<option value="Community Health">Community Health</option>
-  							<option value="Computer Information Systems">Computer Information Systems</option>
-  							<option value="Construction Technology">Construction Technology</option>
-  							<option value="Criminal Justice">Criminal Justice</option>
-  							<option value="Economics">Economics</option>
-  							<option value="Education">Education</option>
-  							<option value="Engineering">Engineering</option>
-  							<option value="Fine Arts">Fine Arts</option>
-  							<option value="Management">Management</option>
-  							<option value="Music">Music</option>
-  							<option value="Pharmacy">Pharmacy</option>
-  							<option value="Philosophy">Philosophy</option>
-  							<option value="Public Affairs and Policy Management">Public Affairs and Policy Management</option>
-  							<option value="Social Work">Social Work</option>
-						</select> <br>
-	Tell us about yourself: <br><textarea id="bio" class="bio"></textarea> <br>
-	<input type="reset" id="button" value="Submit" OnClick="pushStudent()"> <br>
+  <h1>Notes</h1>
+  <form>
+	Title:
+    <input type="text" id="title"> <br>
+	Do by:
+    <input type="date" id="date"> <br>
+	Priority
+    <select id="priority">
+			<option value="#ffcc29">Should do</option>
+  		<option value="#f58634">Must do</option>
+  		<option value="#81b214">Might do</option>
+  		<option value="#206a5d">Want to do</option>
+    </select> <br>
+	Details:<br><textarea id="noteDetails" class="noteDetails"></textarea> <br>
+	<input type="reset" id="button" value="Submit" OnClick="pushNote()"> <br>
+  </form>
 	<div id="output"></div>
 </body>
 </html>
