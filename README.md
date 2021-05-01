@@ -5,3 +5,5 @@ I started this project to practice making and manipulating arrays. Using JavaScr
 ## Getting Started
 
 This was made with simple HTML, CSS, and JavaScript. Easily used by downloading, unzipping files, and running "python -m SimpleHTTPServer 8000" within your command line, and viewing on "localhost:8000"
+
+![Note Taking App Example](/../master/toDoNotes.png "Example of some notes")
